@@ -13,12 +13,12 @@ function windowLoad() {
       // Fjerner hide med 50 ms delay
       setTimeout(() => {
         mainElement.classList.toggle("hide");
-      }, 50);
+      }, 150);
     } else {
       // Tilføjer hide med 130ms delay
       setTimeout(() => {
         mainElement.classList.toggle("hide");
-      }, 130);
+      }, 50);
     }
   });
 

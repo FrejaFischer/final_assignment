@@ -19,6 +19,7 @@
   --color-accent1: #d45422;
 }
 html {
+  background-color: var(--color-primary1);
   & h1 {
     color: var(--color-secondary1);
     font-size: 2rem;
@@ -57,7 +58,7 @@ html {
   height: 2px;
   margin: 6px;
   transition: all 0.3s ease-in-out;
-  background-color: black;
+  background-color: var(--color-accent1);
 }
 .nav_menu {
   display: flex;
@@ -73,12 +74,16 @@ html {
   padding-bottom: 0.375rem;
   border-bottom: 2px solid transparent;
   transition: all 0.3s ease;
-  border-bottom: 2px solid red;
+  color: var(--color-secondary2);
+  border-bottom: 2px solid var(--color-secondary2);
 }
 
 .nav-button:hover {
   transform: scale(1.05);
-  color: darkred;
+  color: var(--color-secondary1);
+}
+.nav_active {
+  border-bottom: 2px solid var(--color-accent1);
 }
 
 @media (max-width: 770px) {
@@ -110,14 +115,14 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5rem;
+    gap: 3rem;
     position: fixed;
     right: -100%;
     width: 100%;
     height: 100vh;
     transition: 0.3s;
     padding-top: 5em;
-    background-color: red;
+    background-color: var(--color-primary2);
   }
   .nav-buttons.active {
     right: 0;
@@ -128,8 +133,10 @@ html {
     padding: 1rem;
     width: fit-content;
     height: fit-content;
-    border-bottom: 2px solid transparent;
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid var(--color-secondary2);
+  }
+  .nav_active {
+    border-bottom: 2px solid var(--color-accent1);
   }
   .hide {
     display: none;
