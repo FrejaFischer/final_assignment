@@ -182,6 +182,26 @@ main {
   }
 }
 
+.color_v2 {
+  background-color: var(--color-secondary1);
+  & h4 {
+    color: var(--color-primary1);
+  }
+  & p:first-of-type {
+    color: var(--color-primary1);
+  }
+  & p:last-of-type {
+    color: var(--color-primary1);
+  }
+}
+.color_v3 {
+  background-color: var(--color-primary1);
+  border: 1px solid var(--color-secondary1);
+  & h4 {
+    color: var(--color-secondary1);
+  }
+}
+
 @container card (width > 16rem) {
   .card {
     & > p:first-of-type {
