@@ -28,6 +28,13 @@
   align-self: center;
   display: flex;
   flex-direction: column;
+
+  & h2 {
+    margin: 1rem 0 0.5rem 0;
+  }
+  & h3 {
+    margin: 0;
+  }
 }
 .socials {
   grid-column: 1/2;
