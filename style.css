@@ -60,6 +60,13 @@ html {
   }
 }
 
+/* main */
+
+main > section:first-child > p {
+  margin-bottom: 3rem;
+  max-width: 50vw;
+}
+
 /* Navigation */
 .burger {
   display: none;

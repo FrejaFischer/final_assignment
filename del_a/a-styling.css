@@ -25,6 +25,7 @@
 .name {
   grid-column: 2/3;
   grid-row: 1/2;
+  margin: 1rem 1rem 0 0;
   align-self: center;
   display: flex;
   flex-direction: column;

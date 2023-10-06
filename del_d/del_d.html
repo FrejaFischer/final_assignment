@@ -30,8 +30,15 @@
       </div>
     </header>
     <main>
-      <h1>Del D</h1>
-      <p>ferf</p>
+      <section>
+        <h1>Del D</h1>
+        <p>
+          Deloopgave D består af et grid-layout, der indeholder fem af de samme kort. Dog fylder kortene en forskellig mængde columns og rows, og derfor har container queries været vejen frem også. Kortene reagere udfra hvilken bredde deres
+          container-forælder har. Der indegår tre breakpoints i layoutet, der ændre kortenes position i det overordnede grid-container. Disse breakpoints har jeg fundet ved trial and error, til jeg til sidst fandt et passende system. Det er værd at
+          bemærke, hvordan hver række i det overordnede grid, er styret af det kort, der har mest indehold. Dette vil sige, hvis et kort har meget tekst, vil dette tekst ikke overflow, men kortets højde og dertil højde på hver række, vil tilpasse
+          sig.
+        </p>
+      </section>
       <section class="layout_container">
         <section class="card_container item_1">
           <section class="card">
