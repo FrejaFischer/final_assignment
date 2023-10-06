@@ -7,9 +7,12 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: "Dosis", sans-serif;
+  font-weight: 300;
   font-size: 18px;
   --little-p: 0.8rem;
   --little-p-height: 1rem;
+  --large-h1: 4rem;
+  --large-h1-weight: 600;
 }
 :root {
   --color-primary1: #f8f8f8;
@@ -43,6 +46,7 @@ html {
   }
   & p {
     font-family: "Roboto", sans-serif;
+    font-weight: 300;
     color: var(--color-secondary1);
     font-size: 1rem;
     opacity: 70%;
