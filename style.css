@@ -11,6 +11,10 @@
   font-size: 18px;
   --little-p: 0.8rem;
   --little-p-height: 1rem;
+  --normal-h1: 2rem;
+  --normal-h1-weight: 300;
+  --medium-h1: 3rem;
+  --medium-h1-weight: 400;
   --large-h1: 4rem;
   --large-h1-weight: 600;
 }
@@ -25,7 +29,7 @@ html {
   background-color: var(--color-primary1);
   & h1 {
     color: var(--color-secondary1);
-    font-size: 2rem;
+    font-size: var(--normal-h1);
     margin: 1rem 0 0.5rem 1rem;
   }
   & h2 {
