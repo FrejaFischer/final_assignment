@@ -11,6 +11,7 @@
   font-size: 18px;
   --little-p: 0.8rem;
   --little-p-height: 1rem;
+  --normal-p: 1rem;
   --normal-h1: 2rem;
   --normal-h1-weight: 300;
   --medium-h1: 3rem;
@@ -52,7 +53,7 @@ html {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     color: var(--color-secondary1);
-    font-size: 1rem;
+    font-size: var(--normal-p);
     opacity: 70%;
     line-height: 1.4rem;
     margin: 1rem 1rem 0.5rem 1rem;
@@ -162,13 +163,38 @@ html {
     grid-template-columns: 1fr 1fr;
   }
 }
-.text {
-  margin: 2rem 0;
+
+.fonts {
+  grid-column: 1;
+
+  & h1:nth-of-type(2) {
+    font-size: var(--medium-h1);
+    font-weight: var(--medium-h1-weight);
+  }
+  & h1:nth-of-type(3) {
+    font-size: var(--large-h1);
+    font-weight: var(--large-h1-weight);
+  }
+  & > div {
+    border: 0.1rem solid var(--color-secondary1);
+    margin: 2rem 1rem;
+  }
 }
+
 .p_small {
   margin-top: 1rem;
   font-size: var(--little-p);
   line-height: var(--little-p-height);
+}
+.colors {
+  grid-column: 2;
+  position: sticky;
+  top: 0;
+}
+.color_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1rem 0;
 }
 .circle {
   display: grid;
@@ -195,10 +221,4 @@ html {
 }
 #orange {
   background-color: var(--color-accent1);
-}
-
-.color_grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 1rem 0;
 }
